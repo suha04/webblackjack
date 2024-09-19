@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="assets/img/icon.png">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <title>Blackjack Suha módra</title>
+</head>
+<body>
+        <div id="jatekter">
+            <div id="asztalFeliratResz">
+                <img id="asztalFelirat" src="assets/img/felirat.png"
+                alt=
+                "Blackjack pays 3 to 2
+                Dealer Must Hit on Soft 17
+                Insurance Pays 2 to 1">
+            </div>
+
+            <div id="dealerter">
+
+                <div class="kartyaresz">
+                    <h1>Dealer</h1>
+                </div>
+
+                <div class="deck">
+                    
+                </div>
+
+
+
+                <div class="toolbar">
+                
+                    <div class="counter" id="dealer">
+                       0
+                    </div>
+                
+
+                </div>
+
+            </div>
+
+            
+
+            <div id="playerter">
+
+                <div class="kartyaresz">
+                    <h1>Player</h1>
+
+                </div>
+
+                <div class="deck">
+                    
+                    
+                   
+                </div>
+
+                
+
+                <div class="toolbar">
+
+                    <div class="button">
+                          <button id="hit" role="button">Hit</button>
+                    </div>
+                
+                    <div class="counter" id="player">
+                       0
+                    </div>
+
+                    <div class="button">
+                        <button id="stand" role="button">Stand</button>
+                    </div>
+                </div>
+            </div>
+
+                <!-- Win Modal -->
+        <div id="Win" class="modal">
+
+                <!-- Modal content -->
+            <div class="modal-content">
+                <img class="modal-decor" src="assets/img/crown.png" alt="">
+                <div class="modal-inside">
+                    <div class="modal-text">
+                        <H1 id="modalTitle">You Won!</H1>
+                        <h2>Well Done!</h2>
+                    </div>
+                    <div class="modal-buttons">
+                        <button class="restart" role="button">Restart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+               <!-- Lose Modal -->
+        <div id="Lose" class="modal">
+
+                <!-- Modal content -->
+            <div class="modal-content">
+                <img class="modal-decor" src="" alt="">
+                <div class="modal-inside">
+                    <div class="modal-text">
+                        <H1 id="modalTitle">You Lost!</H1>
+                        <h2>Don't Give Up!</h2>
+                    </div>
+                    <div class="modal-buttons">
+                        <button class="restart" role="button">Restart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          <!-- Tie Modal -->
+          <div id="Tie" class="modal">
+
+            <!-- Modal content -->
+        <div class="modal-content">
+            <img class="modal-decor" src="" alt="">
+            <div class="modal-inside">
+                <div class="modal-text">
+                    <H1 id="modalTitle">It's a Tie!</H1>
+                    <h2>This needs a Rematch!</h2>
+                </div>
+                <div class="modal-buttons">
+                    <button class="restart" role="button">Restart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+        </div>
+    <script src="assets/js/function.js"></script>
+</body>
+</html>
